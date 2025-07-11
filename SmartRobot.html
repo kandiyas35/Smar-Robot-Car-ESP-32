@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Robot Car</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #3f3f3f;
+        color: white;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        position: relative;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+
+      .logo img {
+        height: 100px;
+      }
+
+      .title-wrapper {
+        text-align: right;
+      }
+
+      .title {
+        font-size: 36px;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      .subtitle {
+        font-size: 18px;
+        margin: 5px 0 0;
+      }
+
+      .buttons {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 20px 0;
+      }
+
+      .button {
+        background-color: #d9d9d9;
+        color: black;
+        width: 100px;
+        height: 100px;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.2s, background-color 0.3s;
+      }
+
+      .button:hover {
+        background-color: #f0a500;
+        transform: scale(1.1);
+      }
+
+      .button img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+
+      .section-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 20px;
+      }
+
+      .section {
+        width: 45%;
+        padding: 20px;
+        background-color: #292929;
+        border-radius: 8px;
+      }
+
+      .divider {
+        width: 2px;
+        background-color: white;
+        height: auto;
+      }
+
+      .developers h3,
+      .about h3 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .developers ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .developers li {
+        margin: 10px 0;
+      }
+
+      .buttons .button.maju {
+        grid-row: 1;
+        grid-column: 2;
+      }
+
+      .buttons .button.mundur {
+        grid-row: 3;
+        grid-column: 2;
+      }
+
+      .buttons .button.kiri {
+        grid-row: 2;
+        grid-column: 1;
+      }
+
+      .buttons .button.kanan {
+        grid-row: 2;
+        grid-column: 3;
+      }
+
+      .car-logo {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+
+      .car-logo img {
+        height: 80px;
+        width: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="car-logo">
+        <img src="car.png" alt="Car Logo" />
+      </div>
+
+      <div class="header">
+        <div class="buttons">
+          <div class="button maju">Maju</div>
+          <div class="button kiri">Kiri</div>
+          <div class="button kanan">Kanan</div>
+          <div class="button mundur">Mundur</div>
+        </div>
+        <div class="title-wrapper">
+          <div class="logo">
+            <img src="LOGO.png" alt="UNESA Logo" />
+          </div>
+          <div class="title">SMART ROBOT CAR</div>
+          <div class="subtitle">
+            Oleh Kelompok 1 Teknik Informatika Kelas 1 Angkatan 2023
+          </div>
+        </div>
+      </div>
+
+      <div class="section-wrapper">
+        <div class="section developers">
+          <h3>DEVELOPERS</h3>
+          <ul>
+            <li>1. Maulana Ardhiansyah Prasetyo (23051204300)</li>
+            <li>2. Mohammad Aditya Pratama (23051204300)</li>
+            <li>3. Moh. Ibnu Kandiyas (23051204300)</li>
+            <li>4. Firza Herfian (23051204300)</li>
+          </ul>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section about">
+          <h3>ABOUT</h3>
+          <p>
+            SMART ROBOT CAR ini adalah Robot yang menggunakan Microcontroller
+            ESP32 yang sudah terintegrasi dengan Bluetooth dan WiFi, dengan hal
+            tersebut maka dapat memudahkan untuk pengontrolan dapat melalui
+            Bluetooth ataupun menggunakan WiFi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
